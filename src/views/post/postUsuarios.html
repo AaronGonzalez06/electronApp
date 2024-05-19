@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarón</title>
+  <link id="changeStyle" rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custonNavPrincipal">
+    <a class="navbar-brand colorWhite" href="#">ActivityApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link colorWhite" href="../menuPrincipal.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorWhite animate__bounce" href="../post/postUsuarios.html">¿Que quieren los usuarios?</a>
+        </li>
+        <li class="nav-item"  id="soloOfertantes">
+          <a class="nav-link colorWhite" href="../activity/misActividadesCreadas.html">Mis actividades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorWhite" href="../message/misMensajes.html">Mis mensajes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link colorWhite" href="../user/miPerfil.html">Mi perfil</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <!-- Card -->
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+      <div class="col-md-8 data">
+        
+      </div>
+
+        <nav class="col-md-2">
+          <div class="container-fluid">
+          </div>
+        </nav>
+    </div>
+
+
+  </div>
+  <script src="../../../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../../funciones/funciones.js"></script>
+  <script src="../../controller/constants.js"></script>
+  <script src="../../controller/postUsuarios.js"></script>
+  <script src="../../controller/controlMenu.js"></script>
+  <script src="../../controller/changeStyle.js"></script>
+</body>
+
+</html>

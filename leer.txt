@@ -1,0 +1,2 @@
+Al final para compilar hay que cambiar la forma en que leer el archivo, en el archivo ventana.se en crearwindo para la primera 
+se ve, cambiar todos losdemas por ese. y quitar el menu de desarrllo

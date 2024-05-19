@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarón</title>
+    <link id="changeStyle" rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/custom.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="mb-3">
+            <label for="eventName" class="form-label">Nombre del Evento</label>
+            <input type="text" class="form-control" id="eventName" placeholder="Nombre del evento" disabled>
+        </div>
+        <div class="mb-3">
+            <label for="eventSummary" class="form-label">Resumen del Evento</label>
+            <textarea class="form-control" id="eventSummary" rows="3" placeholder="Resumen del evento" disabled></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="eventDescription" class="form-label">Descripción del Evento</label>
+            <textarea class="form-control" id="eventDescription" rows="5"
+                placeholder="Descripción del evento" disabled></textarea>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="eventStartTime" class="form-label">Hora de Inicio</label>
+                <input type="time" class="form-control" id="eventStartTime">
+            </div>
+            <div class="col-md-6">
+                <label for="eventEndTime" class="form-label">Hora de Fin</label>
+                <input type="time" class="form-control" id="eventEndTime">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="eventDate" class="form-label">Fecha del Evento</label>
+                <input type="date" class="form-control" id="eventDate">
+            </div>
+            <div class="col-md-6">
+                <label for="eventLocation" class="form-label">Ubicación del Evento</label>
+                <input type="text" class="form-control" id="eventLocation" placeholder="Ubicación del evento" disabled>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="eventDisplacement" class="form-label">Tipo de Desplazamiento</label>
+                <input type="text" class="form-control" id="eventDisplacement" placeholder="Tipo de desplazamiento" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="eventZone" class="form-label">Zona del Evento</label>
+                <input type="text" class="form-control" id="eventZone" placeholder="Zona del evento" disabled>
+            </div>
+        </div>
+
+
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="eventProvince" class="form-label">Provincia del Evento</label>
+                <input type="text" class="form-control" id="eventProvince" placeholder="Provincia del evento" disabled>
+            </div>
+            <div class="col-md-6">
+                <label for="eventMaterial" class="form-label">Materiales del Evento</label>
+                <input type="text" class="form-control" id="eventMaterial" placeholder="Materiales del evento" disabled>
+            </div>
+        </div>
+
+
+        <div class="row mb-3">
+            <div class="col-md">
+                <label for="eventHourlyPrice" class="form-label">Precio por Hora</label>
+                <input type="number" class="form-control" id="eventHourlyPrice" placeholder="Precio por hora">
+            </div>
+            <div class="col-md">
+                <label for="eventActivityPrice" class="form-label">Precio de la Actividad</label>
+                <input type="number" class="form-control" id="eventActivityPrice" placeholder="Precio de la actividad">
+            </div>
+            <div class="col-md">
+                <label for="eventTotal" class="form-label">Total de Participantes</label>
+                <input type="number" class="form-control" id="eventTotal" disabled>
+            </div>
+        </div>
+        <button id="submitButton" type="submit" class="btn btn-primary mb-3">Editar</button>
+        <div class="alert alert-success alerta" role="alert">
+            Datos actualizados.
+          </div>
+    </div>
+    <script src="../../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../../funciones/funciones.js"></script>
+    <script src="../../controller/constants.js"></script>
+    <script src="../../controller/editarActivity.js"></script>
+    <script src="../../controller/changeStyle.js"></script>
+</body>
+
+</html>

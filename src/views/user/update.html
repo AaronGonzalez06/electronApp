@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link id="changeStyle" rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h1>Formulario</h1>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono">
+      </div>
+      <div class="mb-3">
+        <label for="provincia" class="form-label">Provincia</label>
+        <select class="form-select" id="provincia">
+          <option selected>Seleccione una provincia</option>
+          <option value="A Coruña">A Coruña</option>
+          <option value="Álava">Álava</option>
+          <option value="Albacete">Albacete</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <div class="alert alert-success alerta" role="alert">
+      Datos actualizados.
+    </div>
+  </div>
+
+  <script src="../../../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../../funciones/funciones.js"></script>
+  <script src="../../controller/constants.js"></script>
+  <script src="../../controller/updateUserController.js"></script>
+  <script src="../../controller/changeStyle.js"></script>
+</body>
+
+</html>

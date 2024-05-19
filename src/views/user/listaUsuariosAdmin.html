@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarón</title>
+  <link id="changeStyle" rel="stylesheet" href="../../bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/custom.css">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="alert alert-success alerta" role="alert">
+      Datos actualizados.
+    </div>
+    <!-- Card -->
+    <div class="row">
+        <div class="col-md-2">
+
+        </div>
+      <div class="col-md-8 data">
+        <input id="buscador" class="form-control form-control-lg mb-4" type="text" placeholder="Buscar por nick o email" aria-label=".form-control-lg example">
+        <div id="usuariosListado">
+
+        </div>
+      </div>
+
+        <nav class="col-md-2">
+          <div class="container-fluid">
+          </div>
+        </nav>
+    </div>
+
+
+  </div>
+  <script src="../../../node_modules/axios/dist/axios.min.js"></script>
+  <script src="../../funciones/funciones.js"></script>
+  <script src="../../controller/constants.js"></script>
+  <script src="../../controller/zonaAdmin.js"></script>
+  <script src="../../controller/changeStyle.js"></script>
+</body>
+
+</html>

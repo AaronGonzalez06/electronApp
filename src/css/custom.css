@@ -1,0 +1,66 @@
+.custonFlex{
+    justify-content: space-between !important;
+}
+
+
+.custonNav{
+    flex-direction: column;
+}
+
+.formularioNav{
+    background-color: #33b7e2;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 1px 1px black;
+}
+
+.barraDeBusqueda{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card{
+    margin-bottom: 15px;
+}
+
+.btnCuston{
+    margin-right: 10px;
+}
+
+.custonNavPrincipal{
+    background-color: #5e62b0 !important;
+}
+
+.colorWhite{
+    color: white !important;
+}
+
+.animate__backInLeft{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+.animate__bounce{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.custonCardActivity{
+    flex-direction: column !important;
+}
+
+.animate__rotateInUpRight{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.alerta{
+    width: 45% !important;
+    text-align: center !important;
+    margin-left: 25% !important;
+    margin-top: 1% !important;
+    position: absolute;
+    z-index: 10;
+}
