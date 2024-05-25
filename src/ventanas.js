@@ -14,6 +14,7 @@ let verMisInscripciones;
 let verMasSobreActividad;
 let editarActividad;
 let perfilUsuario;
+let vistaIP;
 
 const createWindowperfilUsuario = () => {
   perfilUsuario = new BrowserWindow({
@@ -188,6 +189,24 @@ const createWindowverMisDatos = () => {
   }));
 };
 
+const createWindowIP = () => {
+  vistaIP = new BrowserWindow({
+    width: 400,
+    height: 300,
+    webPreferences: {
+      preload: path.join(__dirname, "preload.js"),
+    },
+  });
+  vistaIP.setMenu(null);
+  //Menu.setApplicationMenu(developerMenu);
+  //editarActividad.loadFile("views/activity/editarActividad.html");
+  vistaIP.loadURL(url.format({
+    pathname: path.join(__dirname, 'views/ip.html'),
+    protocol: 'file:',
+    slashes: true
+  }));
+};
+
 const createWindow = (aplication) => {
   win = new BrowserWindow({
     width: 1450,
@@ -207,6 +226,12 @@ const createWindow = (aplication) => {
     {
       label: 'Archivo',
       submenu: [
+        {
+          label: 'Cambiar IP',
+          click: () => {
+            createWindowIP()
+          }
+        },
         {
           label: 'Salir',
           click: () => {
@@ -244,6 +269,12 @@ const cambioHtmlCerrarSession = (aplication) => {
     {
       label: 'Archivo',
       submenu: [
+        {
+          label: 'Cambiar IP',
+          click: () => {
+            createWindowIP()
+          }
+        },
         {
           label: 'Salir',
           click: () => {

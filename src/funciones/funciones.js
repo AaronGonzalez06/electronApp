@@ -16,6 +16,15 @@ const changeHtml = async (html) => {
   const response = await window.access.changeHtml(html);
 };
 
+const setIP = async (ip) => {
+  const response = await window.access.setIP(ip);
+};
+
+const getIP = async () => {
+  const response = await window.access.getIP();
+  return response;
+};
+
 const addMenu = async () => {
   const response = await window.access.addMenu();
 };

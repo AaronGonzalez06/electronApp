@@ -215,6 +215,10 @@ app.whenReady().then(() => {
     //win.loadFile(html)
     cambioHtml(html);
   });
+  ipcMain.handle("setIP", (event, ip) => {
+    store.set("ip", ip);
+  });
+  ipcMain.handle("getIP", () => store.get("ip"));
   ipcMain.handle("addMenu", () => {
     Menu.setApplicationMenu(dateMenuRol2);
   });

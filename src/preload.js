@@ -10,6 +10,8 @@ contextBridge.exposeInMainWorld("versions", {
 
 contextBridge.exposeInMainWorld("access", {
   changeHtml: (html) => ipcRenderer.invoke("changeHtml", html),
+  setIP: (ip) => ipcRenderer.invoke("setIP", ip),
+  getIP: () => ipcRenderer.invoke("getIP"),
   addMenu: () => ipcRenderer.invoke("addMenu"),
   addMenuRol1: () => ipcRenderer.invoke("addMenuRol1"),
   addMenuRol2: () => ipcRenderer.invoke("addMenuRol2"),
