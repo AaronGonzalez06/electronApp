@@ -28,6 +28,10 @@ const addMenuRol2 = async () => {
   const response = await window.access.addMenuRol2();
 };
 
+const addMenuRol3 = async () => {
+  const response = await window.access.addMenuRol3();
+};
+
 const saveJson = async (json) => {
   const response = await window.json.saveJson(json);
 };

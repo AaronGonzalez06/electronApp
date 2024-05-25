@@ -183,6 +183,21 @@ const templateMenuRol1 = [
   },
 ];
 
+const templateMenuRol3 = [
+  {
+    label: "Sesión",
+    submenu: [
+      {
+        label: "Cerrar sesión.",
+        click: () => {
+          cambioHtmlCerrarSession(app);
+          deleteSession();
+        },
+      },
+    ],
+  },
+];
+
 //comentar cuando lo pasemos a .exe
 /*if (process.env.NODE_ENV !== "production") {
   require("electron-reload")(__dirname, {
@@ -209,6 +224,9 @@ app.whenReady().then(() => {
   ipcMain.handle("addMenuRol2", () => {
     Menu.setApplicationMenu(dateMenuRol2);
   });
+  ipcMain.handle("addMenuRol3", () => {
+    Menu.setApplicationMenu(dateMenuRol3);
+  });
   ipcMain.handle("saveJson", (event, json) => {
     store.set("json", json);
   });
@@ -229,7 +247,7 @@ app.whenReady().then(() => {
 
 const dateMenuRol2 = Menu.buildFromTemplate(templateMenuRol2);
 const dateMenuRol1 = Menu.buildFromTemplate(templateMenuRol1);
-
+const dateMenuRol3 = Menu.buildFromTemplate(templateMenuRol3);
 function deleteSession() {
   const data = store.get("jwt");
 

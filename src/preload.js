@@ -13,6 +13,7 @@ contextBridge.exposeInMainWorld("access", {
   addMenu: () => ipcRenderer.invoke("addMenu"),
   addMenuRol1: () => ipcRenderer.invoke("addMenuRol1"),
   addMenuRol2: () => ipcRenderer.invoke("addMenuRol2"),
+  addMenuRol3: () => ipcRenderer.invoke("addMenuRol3"),
 });
 
 contextBridge.exposeInMainWorld("jwt", {

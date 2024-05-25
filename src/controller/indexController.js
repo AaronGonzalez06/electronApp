@@ -42,6 +42,7 @@ form.addEventListener("submit", (e) => {
             addMenuRol2();
             changeHtml("views/menuPrincipal.html");
           }else if(rol == 3){
+            addMenuRol3();
             changeHtml("views/user/listaUsuariosAdmin.html");
           }
           
