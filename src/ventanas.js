@@ -192,7 +192,7 @@ const createWindowverMisDatos = () => {
 const createWindowIP = () => {
   vistaIP = new BrowserWindow({
     width: 400,
-    height: 300,
+    height: 400,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
     },
@@ -232,6 +232,9 @@ const createWindow = (aplication) => {
             createWindowIP()
           }
         },
+        { 
+          role: "reload" 
+        },
         {
           label: 'Salir',
           click: () => {
@@ -241,6 +244,7 @@ const createWindow = (aplication) => {
       ]
     }
   ];
+  
   
   // Construir el menú a partir del template
   const menu = Menu.buildFromTemplate(template);

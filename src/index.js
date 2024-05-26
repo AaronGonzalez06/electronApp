@@ -3,7 +3,6 @@ const path = require("node:path");
 const Store = require("electron-store");
 const store = new Store();
 const axios = require("axios");
-
 /*let win;
 let winDatosUpdate;*/
 
@@ -245,7 +244,7 @@ app.whenReady().then(() => {
   ipcMain.handle("changeViewModalUserPerfil", () =>createWindowperfilUsuario());
   ipcMain.handle("showStyle", () => store.get("style"));
   
-
+  //store.clear();
   createWindow(app);
 });
 
