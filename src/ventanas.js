@@ -279,6 +279,9 @@ const cambioHtmlCerrarSession = (aplication) => {
             createWindowIP()
           }
         },
+        { 
+          role: "reload" 
+        },
         {
           label: 'Salir',
           click: () => {
