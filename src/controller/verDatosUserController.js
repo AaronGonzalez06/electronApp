@@ -28,6 +28,25 @@ showJson().then((response) => {
   email.value = dataJson.email;
 });
 
+
+changeRol.addEventListener("click", () => {
+  mostrarJwt().then((jwt) => {
+    console.log(jwt);
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: jwt,
+    };
+    axios.put(`${API_URL}/user/changeRolTwo`, {}, { headers: headers })
+    .then(response => {
+      good.style.display = "block";
+    })
+    .catch(error => {
+      console.error('There was an error changing the role!', error);
+    });
+  });
+});
+
+
 deleteUser.addEventListener("click", () => {
   mostrarJwt().then((jwt) => {
     console.log(jwt);
