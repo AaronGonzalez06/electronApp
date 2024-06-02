@@ -253,6 +253,7 @@ const dateMenuRol1 = Menu.buildFromTemplate(templateMenuRol1);
 const dateMenuRol3 = Menu.buildFromTemplate(templateMenuRol3);
 function deleteSession() {
   const data = store.get("jwt");
+  const dataIp = store.get("ip");
 
   const config = {
     headers: {
@@ -261,7 +262,7 @@ function deleteSession() {
   };
 
   axios
-    .get("http://localhost:8080/login/CloserSession", config)
+    .get(`${dataIp}/login/CloserSession`, config)
     .then(function (response) {})
     .catch(function (error) {
       console.error(error);
